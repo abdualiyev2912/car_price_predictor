@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+<body>
+    <h1>Car Price Prediction</h1>
+    <form method="POST">
+        {% csrf_token %}
+        Mashina nomi: <input type="text" name="name" required><br>
+        Yoqilg'i turi: <input type="text" name="fueltype" required><br>
+        Eshiklar soni: <input type="text" name="doornumber" required><br>
+        Tortuvchi g'ildirak: <input type="text" name="drivewheel" required><br>
+        Dvigatel hajmi: <input type="number" name="engine_size" required><br>
+        Ot kuchi: <input type="number" name="horsepower" required><br>
+        <input type="submit" value="Bashorat qilish">
+    </form>
+</body>
+</html>
